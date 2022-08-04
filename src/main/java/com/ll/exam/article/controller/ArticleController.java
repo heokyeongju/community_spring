@@ -46,4 +46,9 @@ public class ArticleController {
 
         rq.println("%s 게시판, %d번 게시물".formatted(boardCode, id));
     }
+    @GetMapping("/usr/article/write")
+    public void showWrite(Rq rq) {
+        rq.view("usr/article/write");
+    }
+
 }
