@@ -105,7 +105,13 @@ public class Ut {
             return sb.toString();
         }
     }
-
+    public static void sleep(long milli) {
+        try {
+            Thread.sleep(milli);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public static class reflection {
         public static <T> T getFieldValue(Object o, String fieldName, T defaultValue) {
             Field field = null;

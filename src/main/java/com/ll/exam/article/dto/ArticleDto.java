@@ -14,4 +14,3 @@ public class ArticleDto {
     private String body;
     private boolean isBlind;
 }
-
